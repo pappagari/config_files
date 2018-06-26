@@ -1,0 +1,27 @@
+unbind C-b
+set -g prefix C-a
+set-option -g mouse-select-pane off
+set -g status on
+
+
+bind-key c new-window -c "#{pane_current_path}"
+
+bind-key % split-window -h -c "#{pane_current_path}"
+bind-key '"' split-window -v -c "#{pane_current_path}"
+
+
+#set -g default-path "~"
+#bind % set default-path "" \; split-window -h \; set -u default-path
+#bind '"' set default-path "" \; split-window -v \; set -u default-path
+
+
+
+# tmux source-file .tmux.conf  # command to source this file
+
+
+#bind -n M-f move-pane -t '.-'
+#bind M-f move-pane -t '.-'
+#bind -n M-r move-pane -h -t '.-'
+#bind M-r move-pane -h -t '.-'
+
+
