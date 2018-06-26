@@ -14,7 +14,6 @@ then
     cp tmux_conf ~/.tmux.conf
     
 else
-then
     cp tmux_conf ~/.tmux.conf
 fi
 
