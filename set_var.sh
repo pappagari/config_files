@@ -4,9 +4,11 @@ if [ -f ~/.bashrc ]
 then
     mv ~/.bashrc ~/.bashrc_Original
     cp bashrc  ~/.bashrc 
-    #source bashrc
+    
+    source ~/.bashrc
 else
     cp bashrc  ~/.bashrc
+    source  ~/.bashrc
 fi
 
 
