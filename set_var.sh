@@ -1,21 +1,21 @@
 
 
-if [ -f .bashrc ]
+if [ -f ~/.bashrc ]
 then
-    mv .bashrc .bashrc_Original
-    cp bashrc  .bashrc 
+    mv ~/.bashrc ~/.bashrc_Original
+    cp bashrc  ~/.bashrc 
     #source bashrc
 fi
 
 
-if [ -f .tmux.conf ] 
+if [ -f ~/.tmux.conf ] 
 then
-    mv .tmux.conf .tmux.conf_Original
-    cp tmux_conf .tmux.conf
+    mv ~/.tmux.conf ~/.tmux.conf_Original
+    cp tmux_conf ~/.tmux.conf
     
 else
 then
-    cp tmux_conf .tmux.conf
+    cp tmux_conf ~/.tmux.conf
 fi
 
 
