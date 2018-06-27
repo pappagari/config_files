@@ -22,3 +22,12 @@ else
 fi
 
 
+if [ -f ~/.vimrc ] 
+then
+    mv ~/.vimrc ~/.vimrc_Original
+    cp vimrc ~/.vimrc
+else
+    cp vimrc ~/.vimrc
+fi
+
+
